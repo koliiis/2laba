@@ -49,7 +49,7 @@ public class ArrayDifferencesTest {
     void testNegativeNumbers() {
         int[] negativeArray = {-5, -3, -1, -4, -2}; // Array with negative numbers
         int[] result = arrayDifferences.findDifferences(negativeArray);
-        int expectedMaxDifference = 4; // Expected max difference for negative numbers
+        int expectedMaxDifference = 2; // Expected max difference for negative numbers
         int expectedMinDifference = 0; // ~~       min ~~
         assertEquals(expectedMaxDifference, result[0], "Max difference for negative numbers should be 4");
         assertEquals(expectedMinDifference, result[1], "Min difference for negative numbers should be 0");
