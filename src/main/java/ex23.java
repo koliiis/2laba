@@ -1,4 +1,4 @@
-public class DuplicateFinder {
+public class ex23 {
 
     // Method to find indices and values of equal elements in an array
     public static String findDuplicates(int[] array) {

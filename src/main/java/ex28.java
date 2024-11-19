@@ -1,4 +1,4 @@
-public class ArrayTransformer {
+public class ex28 {
 
     // Method to create array b based on arrays c and a
     public static int[] transformArrays(int[] a, int[] c) {

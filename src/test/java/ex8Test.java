@@ -2,14 +2,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ArrayDifferencesTest {
+public class ex8Test {
 
-    private ArrayDifferences arrayDifferences; // Instance of the class to be tested
+    private ex8 arrayDifferences; // Instance of the class to be tested
     private int[] testArray; // Array for testing
 
     @BeforeEach
     void setUp() {
-        arrayDifferences = new ArrayDifferences(); // Initialize the ArrayDifferences object
+        arrayDifferences = new ex8(); // Initialize the ArrayDifferences object
         testArray = new int[]{1, 2, 3, 4, 5}; // Example array for tests
     }
 

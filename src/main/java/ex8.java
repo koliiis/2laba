@@ -1,4 +1,4 @@
-public class ArrayDifferences {
+public class ex8 {
 
     public static int[] findDifferences(int[] a) {
         double sum = 0;

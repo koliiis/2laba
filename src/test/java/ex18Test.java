@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-public class IntervalDistributionTest {
+public class ex18Test {
 
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream(); // To capture output
     private int[] testArray; // Array for testing
@@ -19,7 +19,7 @@ public class IntervalDistributionTest {
 
     @Test
     void testDisplayIntervalDistribution() {
-        IntervalDistribution.displayIntervalDistribution(testArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(testArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Interval 0 - 10: 4"), "Should count 4 values in interval [0, 10)");
@@ -30,7 +30,7 @@ public class IntervalDistributionTest {
     @Test
     void testAllOutsideIntervals() {
         int[] allOutsideArray = {25, 30, 35}; // All values outside defined intervals
-        IntervalDistribution.displayIntervalDistribution(allOutsideArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(allOutsideArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Outside intervals: 3"), "Should have 3 values outside the intervals");
@@ -39,7 +39,7 @@ public class IntervalDistributionTest {
     @Test
     void testSingleElementInInterval() {
         int[] singleInArray = {5}; // Single element within the interval
-        IntervalDistribution.displayIntervalDistribution(singleInArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(singleInArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Interval 0 - 10: 1"), "Should count 1 value in interval [0, 10)");
@@ -49,7 +49,7 @@ public class IntervalDistributionTest {
     @Test
     void testSingleElementOutsideInterval() {
         int[] singleOutArray = {25}; // Single element outside the defined intervals
-        IntervalDistribution.displayIntervalDistribution(singleOutArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(singleOutArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Outside intervals: 1"), "Should have 1 value outside the intervals");
@@ -58,7 +58,7 @@ public class IntervalDistributionTest {
     @Test
     void testEmptyArray() {
         int[] emptyArray = {}; // Testing with an empty array
-        IntervalDistribution.displayIntervalDistribution(emptyArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(emptyArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Outside intervals: 0"), "Should have 0 values outside the intervals");
@@ -67,7 +67,7 @@ public class IntervalDistributionTest {
     @Test
     void testNegativeNumbers() {
         int[] negativeArray = {-5, -3, -1}; // Array with negative numbers
-        IntervalDistribution.displayIntervalDistribution(negativeArray, intervalBounds); // Call the method to test
+        ex18.displayIntervalDistribution(negativeArray, intervalBounds); // Call the method to test
 
         String output = outputStreamCaptor.toString(); // Capturing the output
         assertTrue(output.contains("Outside intervals: 3"), "Should have 3 values outside the intervals");

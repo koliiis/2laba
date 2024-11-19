@@ -1,4 +1,4 @@
-public class IntervalDistribution {
+public class ex18 {
 
     public static void displayIntervalDistribution(int[] a, int[] b) {
         // Count the number of elements outside the intervals

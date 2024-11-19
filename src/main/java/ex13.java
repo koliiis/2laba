@@ -1,4 +1,4 @@
-public class ArithmeticProgressionChecker {
+public class ex13 {
 
     public static boolean isArithmeticProgression(int[] a) {
         if (a.length < 2) {
